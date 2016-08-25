@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑个人信息</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script src="js/Renrentou.js"></script>
+    <script>
+            $(function(){
+            progress(".progressBar",0.3);
+            star(".stars",3);
+            $("#form1").validate({
+                onfocusout:function(element) {$(element).valid();}
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="inner">
+        <div class="logo">
+            <a href="#"> <img src="images/logo_03.png"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">融资店铺</a> </li>
+                <li><a href="#">店铺投资人</a> </li>
+            </ul>
+        </div>
+        <p class="right"><a href="#">新手指导</a> <span><i></i><a href="#">登陆</a> <a href="#">注册</a></span></p>
+    </div>
+</div>
+    <div class="main_06">
+        <div class="inner">
+            <h2 class="main-h2"><i></i>个人主页</h2>
+            <div class="main_06-top">
+                <div class="main_06-img">
+                    <img src="images/page_6-head.jpg">
+                </div>
+                    <div class="main_06-right">
+                        <div class="main_06-top1">
+                            <h3>兰兰<i></i></h3>
+                            <p>信息完整度:</p>
+                            <div id="bar" class="main_06-bar-position"><div class="progressBar"></div></div>
+                            <div class="percentage main_06-bar-percentage"><img src="images/progressBar.jpg"><p></p></div>
+                        </div>
+                        <div class="main_06-top2">
+                            <ul>
+                                <li><p>251</p><span>关注</span></li>
+                                <li><p>15</p><span>约谈</span></li>
+                                <li><p>11</p><span>投资</span></li>
+                            </ul>
+                        </div>
+                        <div class="main_06-top3">
+                            <span class="main_06-top3spanA">北京上天入地贸易有限公司</span>
+                            <span class="main_06-top3spanB">创始人</span>
+                            <p>投资星级:</p>
+                            <ul class="stars">
+                                <li><img src="images/star_03.jpg"> </li>
+                                <li><img src="images/star_03.jpg"> </li>
+                                <li><img src="images/star_03.jpg"> </li>
+                                <li><img src="images/star_03.jpg"> </li>
+                                <li><img src="images/star_03.jpg"> </li>
+                            </ul>
+                            <button class="main_06-btn1">编辑个人信息</button>
+                            <button class="main_06-btn2">修改认证信息</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="main_06-nav">
+                <ul>
+                    <li class="main_06-nav-li1"><i></i>基本信息</li>
+                    <li class="main_06-nav-li2"><i></i><a href="RenrentouPage_14.html">店铺</a> </li>
+                    <li class="main_06-nav-li3"><i></i><a href="Renrentou18_1.html"> 资金管理</a></li>
+                    <li class="main_06-nav-li4"><i></i><a href="RenrentouPage_12.html">动态</a></li>
+                    <li class="main_06-nav-li5"><i></i><a href="Renrentou_15_1.html"> 评论</a></li>
+                    <li class="main_06-nav-li6"><i></i>粉丝</li>
+                    <li class="main_06-nav-li7"><i></i>关注</li>
+                </ul>
+            </div>
+            <div class="main_06-con fr">
+                <div class="main_06-con-top">
+                    <h3>头像设置</h3>
+                    <img src="images/page_06_03.jpg">
+                    <button><i></i>上传头像</button>
+                </div>
+                <div class="main_06-con-bot clearfix">
+                    <p class="main_06-con-botP1">* 以下手机号，公司名称，角色均需要点击右上角修改认证信息进行修改。</p>
+                    <ul class="fl">
+                        <li>真实姓名：</li>
+                        <li>手机号：</li>
+                        <li>公司名称：</li>
+                        <li>角色：</li>
+                        <li>所在地区：</li>
+                        <li>QQ：</li>
+                        <li>微博：</li>
+                    </ul>
+                    <div class="main_06-input fl">
+                        <form id="form1" action="#" method="post">
+                            <input type="text" class="{required:true}">
+                            <input type="text" placeholder="18600000000" class="{required:true}">
+                            <input type="text" placeholder="北京飞度传媒有限公司" class="{required:true}">
+                            <input type="text" placeholder="创始人" class="{required:true}">
+                            <div class="main_06-sel">
+                                <select>
+                                    <option value="1">湖南</option>
+                                </select>省
+                                <select>
+                                    <option value="1">益阳</option>
+                                </select>市
+                                <select>
+                                    <option value="1">XX</option>
+                                </select>区
+                            </div>
+                            <input type="text" class="{required:true}">
+                            <input type="text" class="{required:true}">
+                        </form>
+                        <div >
+                            <button type="button" class="main_06-botBtn1">确定</button>
+                            <button type="button" class="main_06-botBtn2">取消</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+<div class="footer">
+    <div class="inner">
+        <div class="top clearfix">
+            <div class="left">
+                <ul>
+                    <li><a href="#">网站首页</a>|</li>
+                    <li><a href="#">关于我们</a>|</li>
+                    <li><a href="#">联系我们</a>|</li>
+                    <li><a href="#">帮助中心</a>|</li>
+                    <li><a href="#">新手指引</a>|</li>
+                    <li><a href="#">友情链接</a> </li>
+                </ul>
+                <p>北京飞度网络科技有限公司 <a href="#">www.renrentou.com</a>版权所有 京ICP备12015672号-7</p>
+            </div>
+            <div class="footer_right">
+                <p>关注人人投</p>
+                <p class="clearfix"><a href="#"> <img src="images/footer_biao_10.png"></a><a href="#"><img src="images/footer_biao_05.png"></a><a href="#"><img src="images/footer_biao_07.png"></a><a href="#"><img src="images/footer_biao_03.png"></a> </p>
+            </div>
+        </div>
+        <div class="footer_bottom"><img src="images/sang_03.png"></div>
+    </div>
+</div>
+
+</body>
+</html>

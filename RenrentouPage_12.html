@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息管理</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/Renrentou.js"></script>
+    <script>
+        $(function(){
+            var pageNumber={now:1,number:4,sum:200};
+            page("#page",pageNumber.now,pageNumber.number,pageNumber.sum)
+        })
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="inner">
+        <div class="logo">
+            <a href="#"> <img src="images/logo_03.png"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">融资店铺</a> </li>
+                <li><a href="#">店铺投资人</a> </li>
+            </ul>
+        </div>
+        <p class="right"><a href="#">新手指导</a> <span><i></i><a href="#">登陆</a> <a href="#">注册</a></span></p>
+    </div>
+</div>
+    <div class="main_12 clearfix">
+        <div class="inner">
+            <h2 class="main-h2"><i></i>消息管理</h2>
+            <div class="main_12-nav fl">
+                <ul>
+                    <li class="main_12-nav-li1"><i></i>系统通知</li>
+                    <li class="main_12-nav-li2"><i></i>私信</li>
+                    <li class="main_12-nav-li3"><i></i>系统消息</li>
+                </ul>
+            </div>
+            <div class="main_12-dia fr">
+                <div class="main_12-top">
+                    <h3>您在与XX对话</h3>
+                    <input type="text">
+                    <i></i>
+                    <a href="javascript:;">返回消息列表</a>
+                    <div class="main_12-img">
+                        <img src="images/page_6-head.jpg">
+                    </div>
+                    <button>提交</button>
+                </div>
+                <div class="main_12_cont">
+                    <ul>
+                        <li class="main_12list-left">
+                            <div class="main_12list-img fl">
+                                <img src="images/page_6-head.jpg">
+                            </div>
+                            <div class="main_12list-cont fl">
+                                <h3>name</h3>
+                                <p>content</p>
+                                <time>2014-03-31</time>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="main_12list-right">
+                            <div class="main_12list-img fr">
+                                <img src="images/page_6-head.jpg">
+                            </div>
+                            <div class="main_12list-cont fr">
+                                <p>content</p>
+                                <time>2014-03-31</time>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="main_12list-left">
+                            <div class="main_12list-img fl">
+                                <img src="images/page_6-head.jpg">
+                            </div>
+                            <div class="main_12list-cont fl">
+                                <h3>name</h3>
+                                <p>content</p>
+                                <time>2014-03-31</time>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="main_12list-right">
+                            <div class="main_12list-img fr">
+                                <img src="images/page_6-head.jpg">
+                            </div>
+                            <div class="main_12list-cont fr">
+                                <p>content</p>
+                                <time>2014-03-31</time>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                    <div id="page"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner">
+            <div class="top clearfix">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">网站首页</a>|</li>
+                        <li><a href="#">关于我们</a>|</li>
+                        <li><a href="#">联系我们</a>|</li>
+                        <li><a href="#">帮助中心</a>|</li>
+                        <li><a href="#">新手指引</a>|</li>
+                        <li><a href="#">友情链接</a> </li>
+                    </ul>
+                    <p>北京飞度网络科技有限公司 <a href="#">www.renrentou.com</a>版权所有 京ICP备12015672号-7</p>
+                </div>
+                <div class="footer_right">
+                    <p>关注人人投</p>
+                    <p class="clearfix"><a href="#"> <img src="images/footer_biao_10.png"></a><a href="#"><img src="images/footer_biao_05.png"></a><a href="#"><img src="images/footer_biao_07.png"></a><a href="#"><img src="images/footer_biao_03.png"></a> </p>
+                </div>
+            </div>
+            <div class="footer_bottom"><img src="images/sang_03.png"></div>
+        </div>
+    </div>
+</body>
+</html>

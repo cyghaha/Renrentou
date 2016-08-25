@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认认购</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/aaa.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+            var tel=$("#form1 p:eq(1) input");
+            var bnt=$(".button")
+            bnt.click(function(){
+                var lowest=$("#lowest");
+                if(lowest.val()<500000){
+                    alert("对不起，您的金额不够")
+                }
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+    <div class="box17_1 box">
+        <div class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/logo_03.png"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="Renrentou18_1.html">融资店铺</a> </li>
+                        <li><a href="#">店铺投资人</a> </li>
+                    </ul>
+                </div>
+                <p class="right"><a href="New_guidelines.html">新手指导</a> <span><a href="register.html">登陆</a> <a href="#">注册</a><i></i></span></p>
+            </div>
+        </div>
+        <div class="main clearfix">
+            <div class="inner">
+                <h1>确认认购</h1>
+                <div class="section clearfix">
+                    <div class="acotuv clearfix">
+                        <h3>确认认购信息</h3>
+                        <div class="left" >
+                            <div class="img"><img src="images/section1.jpg"></div>
+                            <p><span>牛扒工厂</span>牛扒工厂，由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，以五十万元资金和十五名员工开始的西餐店。</p>
+                        </div>
+                        <div class="right">
+                            <div class="Progress">
+                                <span class="min_Progress"></span>
+                                <div class="bg_img">25%</div>
+                            </div>
+                            <p><span>￥100,000</span>项目方出资</p>
+                            <p><span>￥250,000</span>已融资</p>
+                            <p><span>￥10,000,000</span>目标金额</p>
+                        </div>
+
+                    </div>
+                    <div class="acotuv acotuv2">
+                        <h3>确认认购金额</h3>
+                        <div class="form">
+                            认购金额：<input id="lowest" type="text">万 <span>（最低金额：￥500,000 最高金额：￥1.000,000）</span>
+                        </div>
+                    </div>
+                    <div class="acotuv acotuv2 acotuv3">
+                        <form class="form" method="post" id="form" onsubmit="return checkForm(this)" action="">
+                            <h3>确认的联系方式</h3>
+                            <p>手机号码：<input id="tel" type="text" maxlength="11" name="tel"/></p>
+                            <p>家庭电话：<input type="text"  class="{required:true,minlength:6}"></p>
+                            <p> 邮　　编：<input type="text" class="{required:true,minlength:6}"></p>
+                            <p>邮编地址：<input type="text"id="user" name="user" class="{required:true,rangelength:[5,20],messages:{required:'请输入内容'}}"></p>
+                            <p>（注：方便项目方给您邮寄项目资料或相关协议）</p>
+                            <input type="submit" value="保存" class="button">
+                        </form>
+                    </div>
+                    <div class="acotuv acotuv4 ">
+                        <h3>确认付款信息</h3>
+                        <div class="content">
+                            <p>总金额：<span>1000万</span></p>
+                            <button type="button"><a href="RenrentouPae18_2.html"> 去易付宝支付款</a></button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                <div class="top clearfix">
+                    <div class="left">
+                        <ul>
+                            <li><a href="index.html">网站首页</a>|</li>
+                            <li><a href="#">关于我们</a>|</li>
+                            <li><a href="#">帮助中心</a>|</li>
+                            <li><a href="New_guidelines.html">新手指引</a>|</li>
+                            <li><a href="#">友情链接</a></li>
+                        </ul>
+                        <p>北京飞度网络科技有限公司 <a href="#">www.renrentou.com</a>版权所有 京ICP备12015672号-7</p>
+                    </div>
+                    <div class="footer_right">
+                        <p>关注人人投</p>
+                        <p><a href="#"> <img src="images/footer_biao_10.png"></a><a href="#"><img src="images/footer_biao_05.png"></a><a href="#"><img src="images/footer_biao_07.png"></a><a href="#"><img src="images/footer_biao_03.png"></a> </p>
+                    </div>
+                </div>
+                <div class="footer_bottom"><img src="images/sang_03.png"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
